@@ -5,10 +5,10 @@ layout: feed
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Luke's Blog</title>
- <link href="http://pqbdpq.github.io/blog/atom.xml" rel="self"/>
- <link href="http://pqbdpq.github.io/blog"/>
+ <link href="http://lninl.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://lninl.github.io/blog"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://pqbdpq.github.io/blog</id>
+ <id>http://lninl.github.io/blog</id>
  <author>
    <name>Luke</name>
    <email>jiaxiangluke@163.com</email>
@@ -17,9 +17,9 @@ layout: feed
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://pqbdpq.github.io{{ post.url }}"/>
+   <link href="http://lninl.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://pqbdpq.github.io/{{ post.id }}</id>
+   <id>http://lninl.github.io/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
