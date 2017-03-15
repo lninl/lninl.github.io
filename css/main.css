@@ -1,29 +1,69 @@
+/**
+ * a :     链接
+ * ul:     无序列表
+ * ol:     有序列表
+ * li:     定义列表项,与 ul,ol 结合使用
+ * footer: 页脚
+ * nav:    标签定义导航链接的部分
+ */
+
+body { margin: 60px auto; width: 70%; }
+
+a {	text-decoration: none; color: #1E90FF; }
+a:hover { text-decoration: underline; }
+
+p {
+	background-color: #FFFAF0;
+	padding: 20px; 
+	text-indent: 2em;      //首行缩进
+	border-radius:0.75em;  //圆角边框
+	text-align:justify;    //两边对齐
+	line-height: 1.4em; 
+	color: #333; 
+}
+
+h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
+
+/* 页眉 页脚 */
+nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
+nav ul li, footer ul li { display: inline; margin-right: 20px; }
+nav a, footer a {text-decoration: none; color: #999; }
+
+footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
+
+/* Blog */
+ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
+ul.posts li { list-style: none; }
+ul.posts a {text-decoration: none; color: #999; }
+
+/*
 body { margin: 60px auto; width: 70%; }
 
 a { text-decoration: none; color: #999; }
 a:hover { text-decoration: underline; }
 
 p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
-/*
+
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 h1 { font-size: 3em;  }
 h2 { font-size: 2.7em; }
 h3 { font-size: 2.3em; }
 h4 { font-size: 1.9em; }
-*/
+
 nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
 nav ul li, footer ul li { display: inline; margin-right: 20px; }
 
 footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
 
-
+// Blog 
 ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
 ul.posts li { list-style: none; }
 
-
+//CV 
 .cv { margin: 0px 0px 60px; }
 .cv h1 { font-size: 3em; }
 .cv h2 { font-size: 2em; }
 .cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 .cv address, .cv p { font-size: 1.2em; }
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+/**/
