@@ -1,4 +1,5 @@
 /**
+ * 显示配置 
  * a :     链接
  * ul:     无序列表
  * ol:     有序列表
@@ -7,11 +8,44 @@
  * nav:    标签定义导航链接的部分
  */
 
+/**
+ * 标题、段落、页眉、页脚、边距、链接
+ */
 body { margin: 60px auto; width: 70%; }
 
-/* 代码块 */
+a {	text-decoration: none; color: #1E90FF; }
+a:hover { text-decoration: underline; }
+
+p { line-height: 1.5; color: #555; }
+ul, ol{ line-height: 2.0; color: #555; }
+
+h1, h2, h3, h4, h5 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; color: #555; }
+
+/**
+ * 页眉 页脚 
+ */
+
+nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
+nav ul li, footer ul li { display: inline; margin-right: 20px; }
+nav a, footer a {text-decoration: none; color: #999; }
+footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
+
+/** 
+ * Blog 
+ */
+
+ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
+ul.posts li { list-style: none; }
+ul.posts a {text-decoration: none; color: #999; }
+ul.posts { line-height: 1.4em; color: #333; }
+
+/**
+ * 代码块 
+ */
+
 code, pre {
-	font-family: Monaco, Andale Mono, Courier New, monospace;
+	font-family: Monaco, Andale Mono, Courier New, monospace, 
+		         Helvetica, Arial, Sans-Serif;
 }
 code {
 	background-color: #fee9cc;
@@ -31,6 +65,7 @@ pre {
 	border: 1px solid #d9d9d9;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+	border-radius: 0.75em; 
 }
 pre code {
 	background-color: #fff;
@@ -39,8 +74,21 @@ pre code {
 	padding: 0;
 }
 
+/**
+ * 引用 
+ */
+
+blockquote {
+	background: #f9f9f9;
+	border-left: 7px solid #ccc;
+	margin: 1.5em 10px;
+	padding: .5em 10px;
+}
+blockquote p { display:inline; }
 
 /*
+/////////////////////////////////////////////////
+
 pre {
 	padding: 1rem 2rem;
 	overflow-x: auto;
@@ -59,30 +107,6 @@ code {
 	background: #eee;
 	border-radius: 0.75em;  //圆角边框
 }
-/**/
-a {	text-decoration: none; color: #1E90FF; }
-a:hover { text-decoration: underline; }
-
-/* 行间距 */
-p { line-height: 1.5; color: #555; }
-ul, ol{ line-height: 2.0; color: #555; }
-
-h1, h2, h3, h4, h5 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; color: #555; }
-
-/* 页眉 页脚 */
-nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
-nav ul li, footer ul li { display: inline; margin-right: 20px; }
-nav a, footer a {text-decoration: none; color: #999; }
-
-footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
-
-/* Blog */
-ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
-ul.posts li { list-style: none; }
-ul.posts a {text-decoration: none; color: #999; }
-ul.posts { line-height: 1.4em; color: #333; }
-
-/*
 
 p {
 	background-color: #FFFAF0;
@@ -92,6 +116,27 @@ p {
 	text-align:justify;    //两边对齐
 	line-height: 1.4em; 
 	color: #333; 
+}
+
+/////////////////////////////////////////////////
+
+blockquote {
+	background:#f9f9f9;
+	border-left:10px solid #ccc;
+	margin:1.5em 10px;
+	padding:.5em 10px;
+	quotes:"\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+	color:#ccc;
+	content:open-quote;
+	font-size:4em;
+	line-height:.1em;
+	margin-right:.25em;
+	vertical-align:-.4em;
+}
+blockquote p {
+	display:inline;
 }
 
 /////////////////////////////////////////////////
@@ -113,6 +158,8 @@ nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Ser
 nav ul li, footer ul li { display: inline; margin-right: 20px; }
 
 footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
+
+/////////////////////////////////////////////////
 
 // Blog 
 ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
