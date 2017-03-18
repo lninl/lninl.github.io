@@ -6,7 +6,11 @@
  * 标题、段落、页眉、页脚、边距、链接、图像
  */
 
-body { margin: 60px auto; width: 61.8%; }
+body { 
+	margin: 60px auto;
+	width: 61.8%;
+	background:url(/image/texture.png) repeat scroll 0 0 #fff;	
+}
 
 a {	text-decoration: none; color: #1E90FF; }
 a:hover { text-decoration: underline; }
@@ -71,11 +75,12 @@ code, pre {
 		         Helvetica, Arial, Sans-Serif;
 }
 code {
-	font-size: .8em;
+	font-size: .7em;
 	color: rgba(0, 0, 0, 0.75);
 	background-color: #fee9cc;
 	margin: .2em;
 	padding: .1em .4em;
+	border: .1em solid #d9d9d9;
 	border-radius: .2em;
 }
 pre {
@@ -93,7 +98,8 @@ pre code {
 	font-size: .8em;
 	color:#737373;
 	padding: 0;
-	background-color: #fff;
+	border: 0px;
+	background:url(/image/texture.png) repeat scroll 0 0 #fff;	
 }
 
 /**
@@ -101,7 +107,7 @@ pre code {
  */
 
 blockquote {
-	background: #f9f9f9;
+	background:url(/image/texture.png) repeat scroll 0 0 #f9f9f9;	
 	border-left: 0.4em solid #ccc;
 	margin: 1.5em 0.5em;
 	padding: .5em 0.5em;
