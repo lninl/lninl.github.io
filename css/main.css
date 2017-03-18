@@ -1,17 +1,12 @@
 /**
- * 显示配置 
- * a :     链接
- * ul:     无序列表
- * ol:     有序列表
- * li:     定义列表项,与 ul,ol 结合使用
- * footer: 页脚
- * nav:    标签定义导航链接的部分
+ * main.css 显示配置 
  */
 
 /**
- * 标题、段落、页眉、页脚、边距、链接
+ * 标题、段落、页眉、页脚、边距、链接、图像
  */
-body { margin: 60px auto; width: 70%; }
+
+body { margin: 60px auto; width: 61.8%; }
 
 a {	text-decoration: none; color: #1E90FF; }
 a:hover { text-decoration: underline; }
@@ -19,13 +14,41 @@ a:hover { text-decoration: underline; }
 p { line-height: 1.5; color: #555; }
 ul, ol{ line-height: 2.0; color: #555; }
 
-h1, h2, h3, h4, h5 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; color: #555; }
+h1, h2, h3, h4, h5 {
+	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	color: #555; 
+}
+
+/* h6 标记图表 */
+
+h6{
+	margin: 0;
+	padding: 0 0 .5em;
+	font-size: .5em;
+	color: #555; 
+	text-align: center;
+	font-weight: normal;
+}
+
+img {
+	width: 50%;
+	height: 50%;
+	clear: both;
+	display: block;
+	margin:auto;
+}
 
 /**
  * 页眉 页脚 
  */
 
-nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
+nav ul, footer ul { 
+	font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+	font-size: 1em; 
+	padding: 0px; 
+	list-style: none; 
+	font-weight: bold; 
+}
 nav ul li, footer ul li { display: inline; margin-right: 20px; }
 nav a, footer a {text-decoration: none; color: #999; }
 footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
@@ -48,31 +71,29 @@ code, pre {
 		         Helvetica, Arial, Sans-Serif;
 }
 code {
-	background-color: #fee9cc;
+	font-size: .8em;
 	color: rgba(0, 0, 0, 0.75);
-	padding: 1px 3px;
-	font-size: 12px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	background-color: #fee9cc;
+	margin: .2em;
+	padding: .1em .4em;
+	border-radius: .2em;
 }
 pre {
+	font-size: .8em;
+	line-height: 1.3em;
 	display: block;
-	padding: 14px;
-	margin: 0 0 18px;
-	line-height: 16px;
-	font-size: 11px;
-	border: 1px solid #d9d9d9;
+	margin: 0 0 1em;
+	padding: .8em;
+	border: .1em solid #d9d9d9;
 	white-space: pre-wrap;
 	word-wrap: break-word;
 	border-radius: 0.75em; 
 }
 pre code {
-	background-color: #fff;
-	//color:#737373;
-	color: #333;
-	font-size: 11px;
+	font-size: .8em;
+	color:#737373;
 	padding: 0;
+	background-color: #fff;
 }
 
 /**
@@ -81,9 +102,9 @@ pre code {
 
 blockquote {
 	background: #f9f9f9;
-	border-left: 7px solid #ccc;
-	margin: 1.5em 10px;
-	padding: .5em 10px;
+	border-left: 0.4em solid #ccc;
+	margin: 1.5em 0.5em;
+	padding: .5em 0.5em;
 }
 blockquote p { display:inline; }
 
